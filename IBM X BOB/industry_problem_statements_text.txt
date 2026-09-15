@@ -1,0 +1,184 @@
+
+
+=== PAGE 1 ===
+
+Industry Problem Statements
+ 2026
+ 10 real-world industry problems across 5 sectors
+ Powered by IBM Bob
+■ Note to Participants
+The problem statements below are provided as inspiration and serve as a starting point — they
+are not a definitive or exhaustive list. You are encouraged to bring your own problem
+statements, whether drawn from your industry experience or beyond the domains listed here.
+Innovation is not limited to what is on this page.
+■■ Defense & Aerospace
+D1
+Mission Readiness & Predictive Maintenance
+Copilot
+■ Critical Now
+Military organisations cannot reliably determine whether aircraft, vehicles, and
+equipment are mission-ready. Maintenance runs on fixed calendar schedules regardless
+of actual component condition. HUMS (Health & Usage Monitoring System) sensor data
+that could predict failures weeks in advance sits unanalysed. When platforms fail
+unexpectedly, operational readiness drops and recovery takes weeks. The US military
+spends $90B/year on maintenance — shifting to predictive approaches saves billions.
+
+
+=== PAGE 2 ===
+
+■ Your Challenge
+Build a Bob Copilot that ingests sensor data and service records to
+identify non-ready assets, explain each readiness issue, predict which
+components will fail before the next mission window, and recommend a
+prioritised maintenance plan.
+D2
+Threat Intelligence Correlation & Alert
+Prioritisation Assistant
+■ Critical Now
+Defence analysts receive thousands of alerts daily from SIEM systems, satellite feeds,
+cyber sensors, and intelligence reports — all in different formats. No human team can
+read them all. Missing a genuine threat is catastrophic; chasing false positives wastes
+critical resources. Threat assessments must also be produced in structured BLUF
+(Bottom Line Up Front) format so commanders get a clear picture in minutes.
+■ Your Challenge
+Build a Bob solution that ingests multi-source threat feeds, correlates
+alerts to separate genuine threats from false positives, maps attacker
+techniques to the MITRE ATT&CK; framework, and generates
+prioritised BLUF investigation summaries for commanders.
+■■ Semiconductor
+S1
+Wafer Yield Root Cause & Defect Pattern
+Analyser
+■ Critical Now
+At 3nm/5nm chip nodes, a 1% yield drop costs tens of millions per month. Root causes
+hide across thousands of equipment sensors, process parameters, and defect images.
+Engineers spend weeks finding the cause manually — every day of delay is lost
+revenue. Process engineers also need to predict which upcoming batches are at risk
+before they run, not after they fail.
+■ Your Challenge
+Build a Bob solution that analyses wafer lot data and defect reports to
+identify patterns, rank root causes by probability, recommend corrective
+actions, and flag upcoming batches whose process parameters
+historically correlate with low yield.
+
+
+=== PAGE 3 ===
+
+S2
+Fab Bottleneck & Supply Chain Risk Advisor
+■ Critical Now
+Chip lead times are 26–52 weeks. Bottlenecks at specific process steps (lithography,
+etch, CVD) cause cascading delivery delays — the 2021 chip shortage halted auto
+factories for months. Simultaneously, single-source suppliers for critical materials
+(gallium, neon, photoresists) create catastrophic risk: China controls 80%+ of gallium
+and germanium, both now under export controls.
+■ Your Challenge
+Build a Bob solution that identifies fab bottleneck tools from WIP queue
+data, predicts downstream delivery impact, and simultaneously
+evaluates the supply chain for single-point-of-failure suppliers and
+geopolitical concentration risk.
+■ Pharma & Biotech
+P1
+Clinical Trial Risk Monitor & Protocol
+Deviation Detector
+■ Critical Now
+A major clinical trial has 5,000+ patient visits across 200+ sites. Protocol deviations —
+missed visits, wrong dosing, banned co-medications — go undetected until the FDA
+audit. A single rejected submission delays drug approval by 6–12 months and costs
+$50–100M. Risk managers need real-time visibility into which sites are highest risk
+before problems escalate.
+■ Your Challenge
+Build a Bob solution that compares patient records against the protocol
+specification, classifies each deviation by severity (ICH E6 GCP:
+major/minor/administrative), scores site-level risk using leading
+indicators, and generates CAPA-ready reports with recommended
+mitigations.
+P2
+Drug Safety Signal Detector & Regulatory
+Submission Readiness Checker
+■ Critical Now
+
+
+=== PAGE 4 ===
+
+FDA's FAERS database has 20M+ adverse event reports. Vioxx caused 27,000+ heart
+attacks before its signal was acted on. Separately, a drug approval CTD dossier spans
+100,000+ pages across 5 modules — one missing section gets it rejected, costing 6–12
+months and $50–100M. Both problems share the same root cause: too much complex
+data for manual review.
+■ Your Challenge
+Build a Bob solution with two modes: (1) Signal Detection — cluster
+adverse event reports and calculate PRR statistics to flag emerging
+safety signals. (2) Submission Readiness — check a dossier outline
+against ICH M4 CTD requirements, score completeness per module,
+and generate a gap report.
+■ Utilities — Power, Energy, Transmission & Distribution
+U1
+Power Outage Prediction & Grid Equipment
+Failure Advisor
+■ Critical Now
+Power transformer and substation failures cause blackouts costing utilities $1M+/hour
+and affecting millions of people. Most utilities still use calendar-based maintenance,
+while sensors already measuring temperature, vibration, partial discharge, and oil quality
+show failure signatures weeks in advance. Weather events compound the risk — but
+sensor data and weather forecasts are never combined in time to act.
+■ Your Challenge
+Build a Bob solution that combines asset health sensor data, weather
+forecasts, and historical incident records to predict outage-prone areas
+and at-risk equipment, rank assets by grid impact severity, and
+generate a prioritised maintenance and crew pre-positioning plan.
+U2
+Grid Load Optimisation & Renewable Energy
+Performance Advisor
+■ Critical Now
+The US curtailed ~8 TWh of clean energy in 2023 — renewable electricity switched off
+because the grid couldn't absorb it. At the same time, unexpected demand spikes cause
+grid instability. Operators must forecast load spikes, balance renewable generation, and
+detect underperforming solar/wind assets simultaneously — with very limited real-time
+decision support today.
+
+
+=== PAGE 5 ===
+
+■ Your Challenge
+Build a Bob solution that forecasts demand spikes, recommends
+load-balancing actions, detects anomalies in renewable energy
+performance, identifies root causes per underperforming asset, and
+generates an integrated operator optimisation brief with a curtailment
+minimisation plan.
+■ Logistics & Ports
+L1
+Container Congestion Predictor & Port
+Operations Optimiser
+■ Critical Now
+The 2021 LA/Long Beach port backlog had 100+ ships waiting offshore for weeks,
+costing global supply chains $10B+. Port operators allocate berths, cranes, and yard
+space across hundreds of vessels manually in spreadsheets. Congestion hotspots are
+identified reactively — after vessels are already queuing — and alternate routing
+decisions come too late to help.
+■ Your Challenge
+Build a Bob solution that predicts congestion hotspots using vessel
+schedules and berth capacity data, recommends alternate routing
+strategies, optimises berth and crane assignments, and generates a
+72-hour port operations plan for shift supervisors.
+L2
+Supply Chain Disruption Assistant & Fleet
+Utilisation Optimizer
+■ Ongoing Pain
+Supply chain disruptions — weather events, port strikes, geopolitical crises — cascade
+across hundreds of active shipments in ways that are impossible to track manually. Fleet
+assets (trucks, containers, vessels) sit idle while other routes are overloaded. Cold chain
+shipments (vaccines, perishables) are especially vulnerable — a single temperature
+excursion across any leg can spoil a $500K+ cargo, but breaches are only discovered at
+delivery when it is too late.
+■ Your Challenge
+Build a Bob solution that identifies which shipments are affected by an
+active disruption, recommends re-routing or carrier alternatives,
+identifies idle fleet assets for redeployment, and monitors cold chain IoT
+sensor logs to detect temperature excursions and classify their
+regulatory severity before delivery.
+
+
+=== PAGE 6 ===
+
+Powered by IBM Bob

@@ -1,0 +1,70 @@
+
+
+=== PAGE 1 ===
+
+IBM Bob — Getting Started Guide
+ AI coding agent for real-world software engineering
+IBM Bob is IBM's AI coding agent (an "AI SDLC partner") that works inside your own codebase: it can
+explain code, draw architecture diagrams, plan and implement features, review changes, run terminal
+commands, and connect to external tools - similar in spirit to other AI coding assistants, but built for
+real-world software engineering and legacy modernization work.
+This guide is based on IBM's own docs (bob.ibm.com) and the official "Bob Basics" video series on the
+IBM Bob YouTube channel.
+1. What Bob Actually Does
+ Answers questions about an existing codebase ("what does this do?")
+ Draws architecture diagrams from real code
+ Plans a new feature, then implements it
+ Reviews your code changes and lets you accept/reject fixes with one click
+ Runs terminal commands (via Bob Shell)
+ Delegates research-heavy work to subagents and long tasks to background tasks so your main
+conversation doesn't get cluttered
+ Connects to external tools/data via MCP (Model Context Protocol)
+2. Installing Bob
+ Go to bob.ibm.com/download and pick your OS.
+ macOS: download the .pkg, run it, and follow the wizard. Check Apple menu → About This Mac to
+know whether you need the ARM (M1/M2/M3) or Intel build.
+ Windows: download the .exe, run it, follow the wizard, keep the default install directory, click Finish.
+ Linux: download the Debian (.deb) or Red Hat/Fedora (.rpm) package for your distro.
+ Go to https://bob.ibm.com/trial and create a free IBMid if you don't have one
+ Launch Bob and sign in with your IBMid
+ After signing in you'll land on Bob's welcome page, where it may prompt you to install
+extensions/premium packages — skip these for general coding use.
+3. Core Concepts You Need to Know
+
+
+=== PAGE 2 ===
+
+Concept
+What it is
+Modes
+Agent mode = Bob edits/writes code. Ask mode = Q&A
+about the codebase, no edits. Plan mode = design/plan a
+feature before touching code.
+Slash commands
+Shortcuts like /review (code review) or /erd
+(entity-relationship diagram). Type / in the chat to see
+what's available.
+Subagents
+Bob spins up separate helper agents for heavy research
+(e.g., a planning task that burns 29,000 tokens exploring
+code) and returns only a summary to your main chat —
+so your context window stays clean. Bob asks for
+approval before spawning one.
+Background tasks
+Long-running jobs (e.g., writing release notes) that run
+while you keep chatting or reviewing something else.
+Rules, Modes, Skills (customization)
+You and your team can configure how Bob behaves -
+style, conventions, custom workflows. See
+bob.ibm.com/docs/ide/configuration.
+Bob Shell
+Lets you drive terminal/CLI tasks through Bob.
+MCP integrations
+Connects Bob to outside tools/data sources beyond your
+local codebase.
+Golden rule from the docs: the more specific your request, the better the result. Practice on a real
+project, not a hypothetical one.
+4. Where to Go Next
+ Docs: bob.ibm.com/docs/ide
+ Videos: youtube.com/@ibm-bob
+ Download/trial: bob.ibm.com/download
